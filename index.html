@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: fixed; bottom: 1rem; color: white;} 
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="flex justify-content-center align-items-center">
+
+  <div class="container flex">
+
+    <div class="desktop-content flex column justify-content-space">
+      <h1>Stay updated!</h1>
+      <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="list flex column justify-content-space">
+        <div class="point flex"><img src="assets\images\icon-list.svg" class="checkList">Product discovery and building what matters</div>
+        <div class="point flex"><img src="assets\images\icon-list.svg" class="checkList">Measuring to ensure updates are a success</div>
+        <div class="point flex"><img src="assets\images\icon-list.svg" class="checkList">And much more!</div>
+      </div>
+      <div class="email flex column justify-content-space">
+        <div class="adress flex justify-content-space">Email address <p class="error"></p></div>
+        <input type="email" id="emailAdress" placeholder="email@company.com">
+      </div>
+      <button class="submit">Subscribe to monthly newsletter</button>
+    </div>
+
+    <div class="success flex column justify-content-space">
+      <img src="assets\images\icon-success.svg" class="success-icon">
+      <h1>Thanks for subscribing!</h1>
+      <p class="success-description">A confirmation email has been sent to <b class="bold"></b> 
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button class="dismiss">Dismiss message</button>
+    </div>
+
+    <picture>
+      <source media="(min-width: 636px)" srcset="assets\images\illustration-sign-up-desktop.svg">
+      <img src="assets\images\illustration-sign-up-mobile.svg" class="img">
+    </picture>
+
+    <div class="mobile-content flex column justify-content-space">
+      <h1>Stay updated!</h1>
+      <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="list flex column justify-content-space">
+        <div class="point flex"><img src="assets\images\icon-list.svg" class="checkList">Product discovery and building what matters</div>
+        <div class="point flex"><img src="assets\images\icon-list.svg" class="checkList">Measuring to ensure updates are a success</div>
+        <div class="point flex"><img src="assets\images\icon-list.svg" class="checkList">And much more!</div>
+      </div>
+      <div class="emailMobile flex column justify-content-space">
+        <div class="adressMobile flex justify-content-space">Email address <p class="errorMobile"></p></div>
+        <input type="email" id="emailAdressMobile" placeholder="email@company.com">
+      </div>
+      <button class="submitMobile">Subscribe to monthly newsletter</button>
+    </div>
+
+  </div>
+
+  <div class="successMobile flex column justify-content-space">
+    <img src="assets\images\icon-success.svg" class="success-icon">
+    <h1>Thanks for subscribing!</h1>
+    <p class="success-description">A confirmation email has been sent to <b class="boldMobile"></b> 
+      Please open it and click the button inside to confirm your subscription.</p>
+    <button class="dismissMobile">Dismiss message</button>
+  </div>
+
+
+  <script src="script.js"></script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ALtera21">notAltera</a>.
+  </div>
+</body>
+</html>
+

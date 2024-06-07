@@ -1,0 +1,222 @@
+@font-face {
+    font-family: RoboR;
+    src: url("assets/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: RoboB;
+    src: url("assets/fonts/Roboto-Bold.ttf");
+}
+
+:root{
+    --dark-slate-gray: hsl(234, 29%, 20%);
+    --charcoal-gray: hsl(235, 18%, 26%);
+    --gray: hsl(231, 7%, 60%);
+}
+
+/* UTILITI CLASS */
+
+.flex{
+    display: flex;
+}
+
+.flex.column{
+    flex-direction: column;
+}
+
+.flex.justify-content-center{
+    justify-content: center;
+}
+
+.flex.align-items-center{
+    align-items: center;
+}
+
+.justify-content-space{
+    justify-content: space-between;
+}
+
+/* UTILITI CLASS END*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: RoboR;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--charcoal-gray);
+}
+
+.mobile-content, .successMobile{
+    display: none;
+}
+
+
+.container{
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 50rem;
+    height: 35rem;
+    background-color: white;
+    border-radius: 2rem;
+    justify-content: center;
+}
+
+.desktop-content{
+    padding-inline: 1.2rem;
+    width: 50%;
+    height: 80%;
+    align-self: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: RoboB;
+}
+
+.list{
+    height: 6rem;
+}
+
+.checkList{
+    margin-right: 1rem;
+}
+
+.adress{
+    font-size: 0.8rem;
+    font-family: Robob;
+}
+
+.error{
+    color: red;
+}
+
+#emailAdress{
+    height: 3rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    border: 1px solid var(--gray);
+}
+
+#emailAdress:hover{
+    cursor: pointer;
+}
+
+.submit, .dismiss{
+    border: none;
+    height: 3rem;
+    font-family: RoboB;
+    color: white;
+    background-color: var(--dark-slate-gray);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.submit:hover, .dismiss:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg,  rgb(255, 0, 0), rgb(255, 137, 116));
+    border: none;
+    box-shadow: -2px 28px 35px 7px rgba(255, 37, 37, 0.836);
+    -webkit-box-shadow: -2px 28px 35px 7px rgba(207,91,54,0.55);
+    -moz-box-shadow: -2px 28px 35px 7px rgba(207,91,54,0.55);
+}
+
+.img{
+    height: 100%;
+}
+
+/* SUCCESS PAGE */
+
+.success{
+    display: none;
+    box-sizing: border-box;
+    padding: 3.5rem;
+    position: fixed;
+    background-color: white;
+    border-radius: 1.5rem;
+    width: 30rem;
+    height: 30rem;
+}
+
+.success-icon{
+    height: 20%;
+}
+
+/* SUCCESS PAGE END */
+
+@media (max-width: 636px){
+    .attribution{
+        top: 1rem;
+    }
+
+    .desktop-content{
+        display: none;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: start;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .img{
+        width: 100%;
+    }
+
+    .mobile-content{
+        display: flex;
+        box-sizing: border-box;
+        margin-top: 2rem;
+        margin-inline: 2rem;
+        height: 21rem;
+    }
+
+    #emailAdressMobile{
+        height: 3rem;
+        border-radius: 0.5rem;
+        padding-left: 1rem;
+        border: 1px solid var(--gray);
+    }
+    
+    #emailAdressMobile:hover{
+        cursor: pointer;
+    }
+    
+    .submitMobile, .dismissMobile{
+        border: none;
+        height: 3rem;
+        font-family: RoboB;
+        color: white;
+        background-color: var(--dark-slate-gray);
+        border-radius: 0.5rem;
+        width: 100%;
+    }
+    
+    .submitMobile:hover, .dismissMobile:hover{
+        cursor: pointer;
+        background: linear-gradient(90deg,  rgb(255, 0, 0), rgb(255, 137, 116));
+        border: none;
+        box-shadow: -2px 28px 35px 7px rgba(255, 37, 37, 0.836);
+        -webkit-box-shadow: -2px 28px 35px 7px rgba(207,91,54,0.55);
+        -moz-box-shadow: -2px 28px 35px 7px rgba(207,91,54,0.55);
+    }
+    
+    /* SUCCESS PAGE */
+
+    .successMobile{
+        display: none;
+        box-sizing: border-box;
+        padding: 3.5rem;
+        position: fixed;
+        background-color: white;
+        border-radius: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+/* SUCCESS PAGE END */
