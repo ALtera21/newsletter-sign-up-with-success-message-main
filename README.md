@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/responsive-newsletter-desktop-first-no-framework-no-library-0hkxgacXzz)
+- Live Site URL: [Live site URL here](https://altera21.github.io/newsletter-sign-up-with-success-message-main/)
 
 ### Built with
 
